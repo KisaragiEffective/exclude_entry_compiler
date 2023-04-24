@@ -282,7 +282,7 @@ fn compile(
                 format!(r#"www.google.*##.g:has(a[href{href_operator}"{href_spec}")"#),
                 format!(r#"www.google.*##.a[href{href_operator}"{href_spec}"]:upward(1)"#),
             ]
-        }).collect::<String>();
+        }).collect::<Vec<_>>().join("\n");
 
         if verbose {
             println!("pushed Google block rules");
