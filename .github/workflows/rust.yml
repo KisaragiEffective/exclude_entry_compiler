@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
     - name: Search cache
-      uses: Swatinem/rust-cache@v2.7.0
+      uses: Swatinem/rust-cache@v2.7.6
     - name: Build
       run: cargo build --verbose
     - name: Run tests
